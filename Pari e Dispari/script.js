@@ -14,13 +14,14 @@
 
          // Chiedi all'utente di scegliere un numero da 1 a 5
 
-        let numero = prompt("Inserisci un numero valido da 1 a 5.");
+         
+         let numero = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 
         // se l'utente è stupido richiedi di scegliere il numero
 
         while (isNaN(numero) || numero < 1 || numero > 5) {
             alert("Inserisci un numero valido da 1 a 5.");
-            numero = parseInt(prompt("Inserisci un numero da 1 a 5:"));
+            numero = parseInt(prompt("Inserisci un numero valido da 1 a 5."));
         }
 
         console.log('il tuo numero è:', numero);
