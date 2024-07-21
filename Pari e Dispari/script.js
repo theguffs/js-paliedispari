@@ -14,7 +14,6 @@
 
          // Chiedi all'utente di scegliere un numero da 1 a 5
 
-         
          let numero = parseInt(prompt("Inserisci un numero da 1 a 5:"));
 
         // se l'utente è stupido richiedi di scegliere il numero

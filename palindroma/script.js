@@ -1,21 +1,21 @@
-// funzione per capire se è palindroma
-
-function palindroma(parola) {
-
-    let inversa = parola.split('').reverse().join('');
-
-    //split('') divide la parola in un array di caratteri.
-    //reverse() inverte l'array.
-    //join('') ricompone l'array in una stringa.
-
-    return parola == inversa;
-
-    //se parola e inversa sono uguali il return è true
-}
 
 //chiediamo all'utente di inserire la parola
 
-let parola = prompt("Inserisci una parola:");
+let parola = prompt("Inserisci una parola:")
+
+// funzione per capire se è palindroma
+function palindroma(parola){
+    let j  = parola.length - 1
+    for ( let i = 0; i < parola.length / 2;  i++) {
+        if (parola[i] != parola[j]){
+            return false; 
+        }
+        j--;
+    }
+    return true;
+} 
+console.log(palindroma(parola)); 
+
 
 //se la parola inserita dall'utente riserra la funzione (palindroma(parola))
 if (parola) {
